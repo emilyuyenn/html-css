@@ -1,0 +1,252 @@
+/* ======== GENERAL STYLES ========= */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: serif;
+  margin: 0;
+  color: #450f0f;
+  background-color: #f9f3e9;
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+header section,
+nav ul,
+main,
+footer section,
+footer div {
+  width: 900px;
+  margin: auto;
+}
+
+a {
+  color: #cc5500;
+}
+
+/* ------- HEADERS ------- */
+
+/* the header on every page */
+header {
+  background-image: url(images/outside.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+/* a section of content inside the header on every page */
+h1 {
+  padding: 100px 0;
+  color: white;
+  font-size: 30px;
+}
+
+/* the homepage header only */
+header.home {
+  background-image: url(images/patio.jpg);
+}
+
+/* a section of content inside the homepage header only */
+h1.home {
+  font-size: 40px;
+}
+
+/* ------- NAVIGATION ------- */
+
+/* the navigation */
+nav {
+  background-color: #5f1422;
+  color: white;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  color: #ffaa1d;
+  text-align: center;
+}
+
+/* a list in the navigation */
+nav ul {
+  list-style-type: none;
+}
+
+/* a list item in the navigation */
+nav li {
+  display: inline-block;
+  padding: 20px 40px;
+}
+
+/* an anchor in the navigation */
+nav a {
+  color: #ffaa1d;
+  text-decoration: none;
+}
+
+/* the current page in the navigation */
+nav .current-page {
+  color: white;
+}
+
+/* ------- FOOTER ------- */
+
+/* the footer */
+footer {
+  font-family: sans-serif;
+  background-color: #292929;
+  color: white;
+  font-size: 14px;
+}
+
+/* the sections of content inside the footer */
+footer section {
+  padding: 20px 0;
+}
+
+/* a level 2 heading inside the footer */
+footer h2 {
+  font-size: 18px;
+}
+
+/* an anchor inside the footer */
+footer a {
+  color: #ffaa1d;
+}
+
+/* ======== CONTENT BLOCKS ========= */
+
+/* ------- HIGHLIGHT BLOCK ------- */
+
+/* the groups of content that are highlighted because they are page introductions */
+.highlight-content {
+  text-align: center;
+  padding: 40px 0;
+  margin: 40px auto;
+  font-size: 26px;
+  line-height: 1.4;
+  background-image: url(images/cbc-logo-orange.png);
+  background-size: 200px 200px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* ------- FEATURE BLOCK ------- */
+
+/* the self-contained groups of content that advertise another part of the website  */
+article {
+  font-size: 18px;
+  padding: 40px;
+  margin: 56px 0;
+  background-color: #597184;
+  color: white;
+  font-family: sans-serif;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+
+/* a level 2 heading inside the self-contained groups of content that advertise another part of the website */
+article h2 {
+  font-size: 48px;
+  font-family: serif;
+  margin-top: 0;
+}
+
+/* an anchor inside the self-contained groups of content that advertise another part of the website */
+article a {
+  color: #ffaa1d;
+}
+
+/* the self-contained group of content that advertises the beer page  */
+.feature-link.beer {
+  background-image: url(images/beer.jpg);
+}
+
+/* the self-contained group of content that advertises the food page  */
+.feature-link.food {
+  background-image: url(images/food.jpg);
+}
+
+/* ------- CONTACT BLOCK ------- */
+
+/* the group of content that includes contact information */
+.contact {
+  margin: 0 0 40px;
+  text-align: center;
+}
+
+/* a div element inside the group of content that includes contact information */
+.contact div {
+  display: inline-block;
+  padding-right: 40px;
+}
+
+/* a list inside the group of content that includes contact information */
+.contact ul {
+  list-style-type: none;
+}
+
+/* ------- EDITORIAL IMAGE ------- */
+
+/* a self-contained group of content that includes an image and a caption */
+figure {
+  text-align: center;
+}
+
+/* a caption inside a self-contained group of content that includes an image and a caption */
+figcaption {
+  font-style: italic;
+}
+
+/* ------- QUOTES ------- */
+
+/* an element that indicates that the enclosed text is an extended quotation */
+blockquote {
+  background-color: #3c5060;
+  color: white;
+  padding: 60px;
+  width: 900px;
+  margin: 0 auto 40px auto;
+  text-align: center;
+  font-size: 26px;
+  margin: 40px 0;
+}
+
+/* the author of the quotation */
+.author {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+figure img {
+  border-radius: 50%;
+}
+
+figure {
+  /* border: 1px #cccccc solid; */
+  padding: 4px;
+  margin: auto;
+}
+
+.basic {
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+.comment {
+  color: grey;
+}
+
+.feedback-day {
+  color: #597184;
+  font-size: 9px;
+}
+
+.comment {
+  font-family: sans-serif;
+  font-weight: lighter;
+  font-size: 16px;
+}
+
+#review {
+  font-family: sans-serif;
+}

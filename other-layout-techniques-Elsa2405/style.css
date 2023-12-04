@@ -1,0 +1,293 @@
+html {
+  font-size: 62.5%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.6rem;
+  color: #a1aeb7;
+  margin: 0;
+}
+
+.wrapper-width {
+  width: 1170px;
+  margin: auto;
+}
+
+/* == TYPOGRAPHY == */
+
+h1 {
+  font-size: 5rem;
+  color: #505d68;
+  text-align: center;
+}
+
+h3 {
+  font-size: 2.1rem;
+  color: #505d68;
+}
+
+p {
+  line-height: 2.4rem;
+}
+
+a.button {
+  display: inline-block;
+  text-transform: uppercase;
+  color: white;
+  padding: 12px 40px;
+  background-color: #505d68;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+ul {
+  margin: 30px 0;
+}
+
+li {
+  margin: 16px 0;
+}
+
+/* == HEADER == */
+
+header {
+  background-color: #424b5a;
+  overflow: auto;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+nav li {
+  float: left;
+  margin: 0;
+}
+
+nav a {
+  color: white;
+  font-weight: 500;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin: 25px;
+  display: inline-block;
+}
+
+/* == HERO == */
+
+.hero {
+  background-color: #eaeaea;
+  padding: 70px 0 0;
+  overflow: auto;
+}
+
+.hero .wrapper-width {
+  padding: 0 100px;
+  overflow: auto;
+}
+
+.hero img {
+  float: left;
+}
+
+.hero .wrapper-content {
+  float: left;
+  width: calc(100% - 360px);
+  margin-top: 80px;
+  padding: 0 100px;
+}
+
+/* how-it-works */
+.how-it-works {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.how-it-works .flex-container {
+  display: flex;
+
+  text-align: center;
+
+  margin: 4rem 4rem 5rem 0;
+  justify-content: space-between;
+}
+
+.how-it-works h2 {
+  color: #424b5a;
+  font-size: 5rem;
+  padding-top: 8.8rem;
+}
+
+.how-it-works article h3 {
+  color: #424b5a;
+  font-size: 2.1rem;
+}
+
+.how-it-works a {
+  color: #424b5a;
+  padding-bottom: 86.5px;
+}
+
+.how-it-works article .flex-item {
+  width: 288px;
+}
+
+/* resource - float */
+.resource h2 {
+  text-align: center;
+  font-size: 5rem;
+  color: #424b5a;
+  margin: 10rem 0;
+}
+.resource .wrapper.left img {
+  float: left;
+  width: 50%;
+  margin-right: 10rem;
+}
+
+.resource .wrapper .content {
+  padding: 8px;
+}
+
+.resource .clearfix::after {
+  content: ".";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+.resource .wrapper.right img {
+  float: right;
+  width: 50%;
+  margin-left: 10rem;
+}
+
+.resource .wrapper {
+  margin: 9rem;
+}
+
+.resource a {
+  display: block;
+  font-size: 1.2rem;
+  text-align: center;
+
+  background-color: #424b5a;
+  border-radius: 5px;
+  color: #ffffff;
+  margin: 9rem auto;
+
+  padding: 8px;
+  width: 180px;
+  text-decoration: none;
+}
+
+/* Call to action */
+
+.call-to-action-1 {
+  background-color: #424b5a;
+  color: #ffffff;
+  padding: 2rem 13rem;
+  position: relative;
+}
+
+.call-to-action-1 h2 {
+  font-size: 2.1rem;
+  width: 40%;
+}
+
+.call-to-action-1 p {
+  font-weight: 400;
+  width: 40%;
+}
+
+.call-to-action-1 a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  border-radius: 0.8rem;
+  padding: 1.4rem 4.6rem;
+  margin: 3rem;
+}
+
+.position.buttons {
+  position: absolute;
+  left: 60%;
+  top: 96px;
+}
+
+/* footer 1 */
+
+footer {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: 64rem 14rem 14rem auto;
+  width: 1070px;
+  margin: 5% auto;
+}
+
+footer h4 {
+  color: #424b5a;
+}
+
+footer ul {
+  padding-left: 0;
+}
+
+footer li {
+  list-style: none;
+}
+
+footer a {
+  text-decoration: none;
+  color: #a1aeb7;
+}
+
+footer .container {
+  font-size: 1.2rem;
+  color: #424b5a;
+  display: grid;
+  grid-auto-flow: column;
+  grid-column: 1/5;
+  justify-content: space-between;
+  border-top: 1px solid #a1aeb7;
+}
+
+footer .container a {
+  color: #424b5a;
+  padding-left: 2rem;
+  margin-top: 12px;
+}
+
+footer p {
+  /* text-align: right; */
+  padding-left: 2rem;
+  width: 36rem;
+}
+
+.grid-about-form,
+.grid-contact {
+  border-left: 1px solid #a1aeb7;
+  padding-left: 1rem;
+}
+
+.grid-about-form,
+.grid-contact,
+.grid-product {
+  margin-top: 8rem;
+  margin-right: 2rem;
+}

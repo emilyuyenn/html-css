@@ -1,0 +1,90 @@
+body {
+  margin: 0px;
+  font-family: "AR One Sans", sans-serif;
+  text-align: center;
+}
+
+header {
+  min-height: 10vh;
+}
+
+main {
+  margin: 50px;
+}
+
+body {
+  background-color: #034b3c;
+}
+
+header {
+  background-color: rgb(2, 51, 40);
+}
+
+h1,
+h2 {
+  color: #91bca8;
+  font-weight: 900;
+}
+
+p,
+figure {
+  color: #ffffff;
+  font-weight: 30;
+}
+
+a {
+  color: #feaf31;
+}
+
+h1 {
+  /* letter-spacing */
+  letter-spacing: 3px;
+  /* text-transform*/
+  text-transform: uppercase;
+}
+/* line-height */
+p {
+  line-height: 1.5;
+  text-align: left;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+}
+h1 {
+  font-size: 8rem;
+}
+
+/* text-transform, font-style, line-height and letter-spacing properties to style any of the content on the page. */
+
+a,
+figure {
+  font-style: oblique;
+  display: block;
+  font-size: small;
+}
+/* organize layout with grid */
+main {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 20px;
+}
+h1 {
+  grid-column: span 3;
+}
+
+p {
+  columns: auto 2;
+}
+
+figure img {
+  width: 40%;
+  display: inline-block;
+}
+
+figure img {
+  width: 100%;
+}

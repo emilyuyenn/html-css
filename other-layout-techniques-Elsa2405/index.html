@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Other Layout Techniques</title>
+    <!-- DGL 103 CVS3 - Elsa Uyen - Other Layout Techniques -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="wrapper-width">
+        <img src="images/logo-white.png" width="100" alt="form logo" />
+        <nav>
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="how-it-works.html">How it works</a>
+            </li>
+            <li>
+              <a href="features.html">Features</a>
+            </li>
+            <li>
+              <a href="press.html">Press</a>
+            </li>
+            <li>
+              <a href="pricing.html">Pricing</a>
+            </li>
+            <li>
+              <a href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="hero">
+      <div class="wrapper-width">
+        <h1>The last phone you'll ever need</h1>
+        <img src="images/smartphone.png" alt="mobile phone" width="360" />
+        <div class="wrapper-content">
+          <h3>Retina display</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+          <ul>
+            <li>Higher pixel density</li>
+            <li>Better render of images</li>
+            <li>Resolution of 1334x750</li>
+          </ul>
+          <a href="#" class="button">See all the features</a>
+        </div>
+      </div>
+    </section>
+    <!-- Continue the code below -->
+    <main>
+      <!-- flexbox -->
+      <section class="how-it-works">
+        <h2>How it works</h2>
+        <div class="flex-container">
+          <article class="flex-item">
+            <img src="images/round.svg" alt="round" />
+            <h3>Step 1</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipdo eiusmod tempor
+              incididunt ut labore et dolore magna.
+            </p>
+          </article>
+          <article class="flex-item">
+            <img src="images/round.svg" alt="round" />
+            <h3>Step 2</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipdo eiusmod tempor
+              incididunt ut labore et dolore magna.
+            </p>
+          </article>
+          <article class="flex-item">
+            <img src="images/round.svg" alt="round" />
+            <h3>Step 3</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipdo eiusmod tempor
+              incididunt ut labore et dolore magna.
+            </p>
+          </article>
+        </div>
+        <a href="#">Learn more about how it works</a>
+      </section>
+      <!-- float -->
+      <section class="resource">
+        <h2>The last wireframe kit you’ll ever need</h2>
+        <div class="wrapper left clearfix">
+          <img src="images/square.svg" alt="square" />
+          <div class="content">
+            <h3>The last wireframe kit you'll ever need</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+        </div>
+        <div class="wrapper right clearfix">
+          <img src="images/square.svg" alt="square" />
+          <div class="content">
+            <h3>The last wireframe kit you'll ever need</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+        </div>
+
+        <a href="/">VIEW FEATURES</a>
+      </section>
+      <!-- position -->
+      <section class="call-to-action-1">
+        <div class="position content">
+          <h2>Get the most out of Form</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliquat enim ad
+            minim veniam.
+          </p>
+        </div>
+        <div class="position buttons">
+          <a href="" style="color: #ffffff; border: solid #ffffff"
+            >DOWNLOAD TRIAL</a
+          >
+          <a href="" style="color: #424b5a; background-color: #ffffff"
+            >SIGN UP</a
+          >
+        </div>
+      </section>
+    </main>
+    <!-- grid -->
+    <footer>
+      <div class="grid-logo-content">
+        <img src="images/dark.svg" alt="logo" />
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniamquis.
+        </p>
+      </div>
+
+      <div class="grid-product">
+        <h4>PRODUCT</h4>
+        <ul>
+          <li><a href="#">How it works</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Testimonials</a></li>
+        </ul>
+      </div>
+      <div class="grid-about-form">
+        <h4>ABOUT FORM</h4>
+        <ul>
+          <li><a href="#">Our team</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Press</a></li>
+          <li><a href="#">Stores</a></li>
+        </ul>
+      </div>
+      <div class="grid-contact">
+        <h4>CONTACT</h4>
+        <ul>
+          <li><a href="#">info@form.com</a></li>
+          <li><a href="#">250-334-5000</a></li>
+          <li>
+            <a href="#">2300, Ryan Road <br />Courtenay, BC, V9N 8N6</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="container">
+        <a href="">Terms and conditions</a>
+        <p>&copy;2023 Form | All right reserved</p>
+      </div>
+    </footer>
+  </body>
+</html>

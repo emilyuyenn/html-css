@@ -1,0 +1,883 @@
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: black;
+  line-height: 1.6;
+}
+#main-navigation ul li.active-link>a{
+  text-decoration:underline;
+  color:black;
+}
+/*text elements*/
+p {
+  color: white;
+  font-family: "Lato", sans-serif;
+}
+h2 {
+  color: white;
+  font-family: "Playfair Display", serif;
+}
+
+/*--Header--*/
+
+.navigation3 {
+  display: flex;
+  flex-direction: row;
+  display: none;
+  max-width: 1170px;
+}
+.logohead {
+  width: 90px;
+  padding-bottom: 40px;
+}
+
+header ul {
+  display: flex;
+justify-content: flex-start;
+  list-style: none;
+
+  margin-right: 20px;
+}
+
+header li {
+  margin-left: 20px;
+
+  font-size: 10px;
+
+  height: 50%;
+}
+
+header a {
+  text-decoration: none;
+
+  color: white;
+}
+video{
+  display: flex;
+  width: 300px;
+}
+/*hero*/
+.herobackground{
+  background-image: url(images/eberhard-grossgasteiger-iAkAhmq0bvA-unsplash.jpg);
+}
+h1 {
+  color: white;
+  clear: both;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 5px;
+}
+.build1 {
+  font-size: 20px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+.buildwithus,
+.centerbutton {
+  margin-top: 1px;
+padding-bottom: 40px;
+}
+.hero {
+  height: 400px;
+  width: 370px;
+}
+.centerbutton {
+  display: flex;
+  justify-content: center;
+}
+.contactbutton {
+  text-decoration: underline;
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 30px;
+  background-color: #000;
+}
+/*menu*/
+/* watched youtube videos on hamburger menus*/
+.menu{
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+}
+.burger-checkbox {
+  position: absolute;
+  visibility: hidden;
+}
+.burger {
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  display: block;
+  position: relative;
+  border: none;
+  background: transparent;
+  width: 40px;
+  height: 26px;
+}
+.burger::before,
+.burger::after {
+  content: "";
+  left: 0;
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 10px;
+  background: white;
+}
+.burger::before {
+  top: 0;
+  box-shadow: 0 11px 0 #000;
+  transition: box-shadow 0.3s 0.15s, top 0.3s 0.15s, transform 0.3s;
+}
+.burger::after {
+  bottom: 0;
+  transition: bottom 0.3s 0.15s, transform 0.3s;
+}
+.burger-checkbox:checked + .burger::before {
+  top: 11px;
+  transform: rotate(45deg);
+  box-shadow: 0 6px 0 rgba(0, 0, 0, 0);
+  transition: box-shadow 0.15s, top 0.3s, transform 0.3s 0.15s;
+}
+.burger-checkbox:checked + .burger::after {
+  bottom: 11px;
+  transform: rotate(-45deg);
+  transition: bottom 0.3s, transform 0.3s 0.15s;
+}
+.menu-list {
+  top: 0;
+  right: 0;
+  position: absolute;
+  display: grid;
+  gap: 12px;
+  padding: 42px 0;
+  margin: 0;
+  background: green;
+  list-style-type: none;
+  transform: translateX(100%);
+  transition: 0.3s;
+  width: 200px;
+}
+.menu-item {
+  display: block;
+  padding: 8px;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+}
+.menu-item:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+.burger-checkbox:checked ~ .menu-list {
+  transform: translateX(0);
+}
+
+/*about section*/
+.about-us {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-size: 15px;
+  padding-top: 10px;
+}
+.aboutus{
+  max-width: 900px;
+}
+.about {
+  color: black;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+}
+.about1 {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+
+}
+.aboutbutton {
+  color: #a1aeb7;
+  text-decoration: none;
+  border: #a1aeb7 1px solid;
+  padding: 6px;
+  border-radius: 7px;
+}
+
+/*portfolio*/
+.projects {
+  margin-top: 70px;
+  font-size: 3rem;
+  text-align: center;
+}
+video {
+  margin-top: 0;
+ max-width: 1170px;
+ padding-top: 40px;
+}
+
+/*CTA*/
+.cta {
+  background-image: url(images/bathroom.jpg);
+  height: 300px;
+}
+.cta2 {
+  font-size: 30px;
+  text-align: center;
+  padding-top: 40px;
+}
+.contactnow {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+.satisfaction {
+  list-style-type: none;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+.mapsection{
+  display: flex;
+  flex-direction: column;
+}
+
+/*footer*/
+
+footer {
+  text-align: center;
+  padding: 2rem;
+}
+.footer2 {
+  display: flex;
+}
+footer nav {
+  margin-bottom: 3rem;
+}
+iframe {
+  width: 400px;
+  height: 400px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.design {
+  width: 400px;
+  height: 300px;
+  margin-left: 90px;
+}
+.mapsection {
+  display: flex;
+  flex-direction: column;
+}
+.logo {
+  padding-top: px;
+  width: 400px;
+  height: 400px;
+}
+
+footer ul {
+  list-style: none;
+  margin: 0;
+}
+footer li {
+  margin: 3rem 2rem 0 0;
+}
+footer p {
+  border-top: 1px solid #a1aeb7;
+  padding-top: 1rem;
+  font-size: 14px;
+  color: #a1aeb7;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+.footer2 {
+  display: flex;
+  justify-content: center;
+}
+.desktopfoot a {
+  margin-left: 20px;
+  font-size: 30px;
+}
+.footer2 {
+  display: flex;
+  justify-content: center;
+}
+.location {
+  margin-left: 20px;
+  display: flex;
+  font-size: 20px;
+}
+.desktopfoot a {
+  margin-left: 20px;
+  font-size: 30px;
+}
+.desktopfoot {
+  color: white;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.design {
+  width: 40px;
+  height: 300px;
+  margin-left: 90px;
+  display: none;
+}
+.map2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 20px;
+}
+/* DESKTOP*/
+/* Large devices (desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
+.hide{
+  display: flex;
+}
+.headerbg {
+  background-color: green;
+}
+.navigation3 {
+  display: flex;
+  justify-content: center;
+}
+header ul {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+header li {
+  list-style: none;
+}
+header a {
+  font-size: 30px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+.navigation {
+  margin-top: 60px;
+}
+/*hero desktop*/
+.build {
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+}
+.buildwithus {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+/*about us desktop*/
+.about-us {
+  background-image: url(images/jon-moore-Zjq1UTyT2kE-unsplash.jpg);
+  height: 300px;
+}
+.aboutbuttoncointainer {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  color: white;
+  font-size: 25px;
+  text-decoration: underline;
+}
+.aboutus {
+  font-size: 17px;
+  font-family: "Lato", sans-serif;
+}
+.aboutbutton {
+  background-color: white;
+  color: #000;
+  font-size: 20px;
+  font-family: "Playfair Display", sans-serif;
+  font-weight: bold;
+}
+.aboutbutton:hover {
+  color: white;
+  background-color: #000;
+}
+/*portfolio*/
+.Portfolio {
+  background-color: black;
+}
+.video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+video {
+  max-width: 1170px;
+  margin: auto;
+  margin-bottom: 40px;
+}
+.projects {
+  font-size: 40px;
+  color: white;
+}
+/*CTA desktop*/
+.text {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.flex-container {
+  display: flex;
+  justify-content: center;
+  background-color: darkgray;
+}
+
+/*Footer desktop*/
+.spacing {
+  margin-top: 2rem;
+}
+.footer2 {
+  display: inline-block;
+  flex-direction: row;
+}
+.memberships {
+  font-size: 40px;
+}
+
+.logotext {
+  display: flex;
+  justify-content: flex-start;
+}
+.text {
+  font-size: 30px;
+  margin-left: 10px;
+  display: flex;
+  text-align: center;
+}
+
+/*footer nav*/
+.footer2 {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+.location {
+  margin-left: 20px;
+}
+.desktopfoot a {
+  margin-left: 20px;
+  font-size: 30px;
+}
+iframe {
+  width: 400px;
+  height: 400px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.design {
+  width: 400px;
+  height: 300px;
+  margin-left: 90px;
+}
+
+.mapsection {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.logo {
+  padding-left: 20px;
+  width: 400px;
+  height: 400px;
+}
+/*Form*/
+form .text {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  width: 400px;
+  margin-top: 40px;
+}
+.feedback-input {
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border: 2px solid #cc6666;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+.feedback-input:focus {
+  border: 2px solid #cc4949;
+}
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize: vertical;
+}
+
+[type="submit"] {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  width: 100%;
+  background: #cc6666;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+  color: white;
+  font-size: 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: all 0.3s;
+  margin-top: -4px;
+  font-weight: 700;
+}
+[type="submit"]:hover {
+  background: #cc4949;
+}
+h3 {
+  color: white;
+  font-size: 20px;
+  display: flex;
+}
+
+/*hero*/
+.contacthero {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url(images/hero2.jpg);
+  max-width: 1170px;
+  object-fit: cover;
+  margin: auto;
+  height: 500px;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+.contactnow2 {
+  font-size: 20px;
+  color: white;
+  border: white 2px solid;
+  padding: 5px;
+  border-radius: 6px;
+}
+/*contact form*/
+.have {
+  font-size: 20px;
+  text-align: center;
+}
+.mapcontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  
+}
+/*Form*/
+.contactform {
+  display: flex;
+  flex-direction: column;
+  background-color: #a1aeb7;
+  border-radius: 4px;
+  max-width: 1000px;
+  padding: 30px;
+}
+h3 {
+  font-size: 20px;
+}
+form .text {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 40px;
+}
+.feedback-input {
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border: 2px solid white;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+.feedback-input:focus {
+  border: 2px solid white;
+}
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize: vertical;
+}
+
+[type="submit"] {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  width: 100%;
+  background: white;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+  color: black;
+  font-size: 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: all 0.3s;
+  margin-top: -4px;
+  font-weight: 700;
+}
+[type="submit"]:hover {
+  background: green;
+}
+/*how to contact- map address loacation phone number*/
+.contactmap {
+  display: flex;
+  justify-content: center;
+}
+.map {
+  margin-left: 50px;
+  height: 600px;
+}
+
+/*table section*/
+table {
+  color: white;
+}
+
+/*About us page*/
+.qualification {
+  font-size: 20px;
+  color: #000;
+}
+.team {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  object-fit: cover;
+  margin: auto;
+  height: 400px;
+  text-align: center;
+  background-image: url(images/jon-moore-Zjq1UTyT2kE-unsplash.jpg);
+}
+.ourteam {
+  color: #000;
+  font-size: 40px;
+}
+.learn {
+  font-size: 25px;
+  color: #cc4949;
+  border: 2px solid red;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 3px 0;
+  text-align: center;
+}
+.learn:hover {
+  background-color: #000;
+}
+/*what we do*/
+.whatwedo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-size: 30px;
+  background-color: #cc4949;
+}
+.whatwedotext {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+.contactnow3 {
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 10px;
+  text-decoration: underline;
+  color: #000;
+}
+.contactnow3:hover {
+  background-color: #a1aeb7;
+}
+/*Team Table*/
+table {
+  font-size: 20px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  border: 2px solid white;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+.tablecontainer {
+  margin-bottom: 20px;
+}
+.table
+/*hover effects*/
+.aboutbuttoncointainer:hover {
+  background-color: red;
+  color: white;
+}
+.contactbutton:hover {
+  border: 2px solid red;
+  border-radius: 25px;
+  background-color: green;
+  padding: 9px;
+  color: black;
+}
+.contactnow2:hover {
+  background-color: white;
+  color: #000;
+  font-weight: bold;
+}
+.centerbutton {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  border: 3px solid white;
+  border-radius: 5px;
+  color: #000;
+  width: 200px;
+  padding: 0;
+  overflow: hidden;
+  cursor: pointer;
+  font-size: 20px;
+}
+.btn .btnLable {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  color: white;
+  background-color: black; /*button initial background color*/
+}
+.btn .btnLable span {
+  height: 100%;
+  width: 100%;
+  display: block;
+  position: relative;
+}
+.btn .btnLable .btnText {
+  font-weight: bold;
+  font-family: sans-serif;
+  z-index: 1;
+  line-height: 60px;
+  position: relative;
+  top: -100%;
+  transition: all 0.3s ease-out;
+}
+.btn .btnLable .btnHoverMask {
+  background-color: white;
+  width: 0%;
+  transform: skew(-15deg);
+  z-index: 0;
+  margin-left: -10%;
+  transition: all 0.3s ease-out;
+}
+
+.btn:hover .btnHoverMask {
+  width: 120%;
+}
+.btn:hover .btnText {
+  color: #000;
+}
+.contactfooter:hover {
+  background-color: white;
+  color: #000;
+  border: 5px solid green;
+}
+.aboutfooter:hover {
+  background-color: white;
+  color: #000;
+  border: 5px solid green;
+}
+.portfoliofooter:hover {
+  background-color: white;
+  color: #000;
+  border: 5px solid green;
+}
+/*page under construction*/
+.under {
+  background: url(images/SUHmERE.png);
+  background-repeat: repeat;
+}
+.under2 {
+  text-shadow: 1px 1px 1px #606060;
+  opacity: 0.95;
+  margin-top: 15px;
+  font-size: 35px;
+  color: #202020;
+}
+.under3 {
+  text-shadow: 1px 1px 1px #606060;
+  text-align: center;
+  opacity: 0.95;
+  margin-top: -20px;
+  font-size: 25px;
+  color: #202020;
+}
+div.overlay {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  opacity: 0.4;
+  filter: alpha(opacity=40); /*--Watched a youtube video on filters and opacity*/
+}
+div.text {
+  text-align: center;
+}
+div.image {
+  width: 100%;
+  text-align: center;
+  opacity: 0.6;
+  box-shadow: 2px 2px 2px #606060;
+}
+.goback {
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  color: black;
+}
+.btn {
+  background-color: #000;
+  color: lightgray;
+}
